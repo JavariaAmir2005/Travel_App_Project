@@ -1,0 +1,3 @@
+- [x] Fix import path in lib/screens/home_screen.dart from 'travel_app_ui' to 'travel_app'
+- [ ] Add assets declaration in pubspec.yaml for images
+- [ ] Run flutter analyze to verify fixes
