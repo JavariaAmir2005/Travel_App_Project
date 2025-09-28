@@ -23,7 +23,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
       appBar: AppBar(
         title: const Text("Explore"),
         centerTitle: true,
-        backgroundColor: const Color(0xFFA36C88), // theme color
+        backgroundColor: const Color(0xFFA36C88),
       ),
       body: Container(
      decoration: const BoxDecoration(
@@ -38,14 +38,13 @@ class _ExploreScreenState extends State<ExploreScreen> {
         ),
         child: Column(
           children: [
-            // search bar
             Padding(
               padding: const EdgeInsets.all(12),
               child: TextField(
                 decoration: InputDecoration(
                   hintText: "Search places...",
                   prefixIcon: const Icon(Icons.search),
-                  fillColor: Colors.white.withOpacity(0.9), // keeps textfield readable
+                  fillColor: Colors.white, 
                   filled: true,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
@@ -56,8 +55,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
                 },
               ),
             ),
-
-            // list of results
             Expanded(
               child: ListView.builder(
                 itemCount: filtered.length,
@@ -65,7 +62,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                   final location = filtered[index];
                   return ListTile(
                     leading: ClipRRect(
-                      borderRadius: BorderRadius.circular(8), // rounded image
+                      borderRadius: BorderRadius.circular(8), 
                       child: Image.asset(location.image,
                           width: 60, height: 60, fit: BoxFit.cover),
                     ),

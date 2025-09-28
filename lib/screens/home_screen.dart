@@ -72,11 +72,9 @@ class HomeScreen extends StatelessWidget {
                   onPressed: () {
                     onToggleBookmark(
                       location,
-                    ); // only toggles, no snackbar here
+                    ); 
                   },
                 ),
-
-                // tap → open details
                 onTap: () {
                   Navigator.push(
                     context,

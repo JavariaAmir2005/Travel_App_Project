@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.teal,
         fontFamily: 'Poppins',
       ),
-      home: const LoginScreen(), // Start at login
+      home: const LoginScreen(), 
     );
   }
 }
@@ -37,8 +37,6 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   int _selectedIndex = 0;
   final List<LocationDetail> bookmarks = [];
-
-  /// Handles bookmark toggle + shows SnackBar
   void _toggleBookmark(LocationDetail location) {
     setState(() {
       if (bookmarks.contains(location)) {
@@ -62,7 +60,7 @@ class _MainPageState extends State<MainPage> {
         bookmarks: bookmarks,
         onToggleBookmark: _toggleBookmark,
       ),
-      const ExploreScreen(), // from search_screen.dart
+      const ExploreScreen(), 
       BookmarkScreen(bookmarks: bookmarks),
       const ProfileScreen(),
     ];

@@ -32,7 +32,7 @@ class SignupScreen extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(
-                      color: Color(0xFFA36C88), // theme color
+                      color: Color(0xFFA36C88), 
                       width: 3,
                     ),
                   ),
@@ -59,7 +59,6 @@ class SignupScreen extends StatelessWidget {
 
                 const SizedBox(height: 30),
 
-                // Name
                 TextField(
                   controller: nameController,
                   decoration: InputDecoration(
@@ -77,7 +76,6 @@ class SignupScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 16),
 
-                // Email
                 TextField(
                   controller: emailController,
                   decoration: InputDecoration(
@@ -117,7 +115,7 @@ class SignupScreen extends StatelessWidget {
                   height: 50,
                   child: ElevatedButton(
                     onPressed: () {
-                      // For now, just go back to login
+     
                       Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(builder: (_) => const LoginScreen()),
@@ -142,7 +140,6 @@ class SignupScreen extends StatelessWidget {
 
                 const SizedBox(height: 16),
 
-                // Back to Login
                 TextButton(
                   onPressed: () {
                     Navigator.pushReplacement(

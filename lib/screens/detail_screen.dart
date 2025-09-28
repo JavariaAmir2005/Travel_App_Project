@@ -55,7 +55,6 @@ class DetailScreen extends StatelessWidget {
               ),
             ),
 
-            // Address + Rating
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Row(
@@ -71,7 +70,6 @@ class DetailScreen extends StatelessWidget {
             ),
             const SizedBox(height: 16),
 
-            // Extra Info (Temperature, Time)
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Row(
@@ -88,7 +86,6 @@ class DetailScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
 
-            // Description
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Text(
